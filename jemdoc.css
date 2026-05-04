@@ -81,26 +81,30 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-    #tlayout {
-        flex-direction: column;
+    #layout-menu {
+        width: 180px; 
+        display: block; 
+        flex-shrink: 0;
+        border-right: 1px solid #dddddd;
+        border-bottom: none;
     }
 
-    #layout-menu {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #dddddd;
-        padding: 15px;
-        box-sizing: border-box;
+    #tlayout {
+        flex-direction: row; 
     }
 
     #layout-content {
         padding: 20px;
-        max-width: 100%;
+        max-width: calc(100% - 180px);
     }
 
     .profile-container {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+    }
+
+    .profile-img img {
+        width: 100px;
     }
 }
