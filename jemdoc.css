@@ -24,8 +24,8 @@ body {
 #layout-content {
     flex-grow: 1;
     max-width: 850px;
-	width: 100%;
-	min-width: auto;
+    width: 100%;
+    min-width: auto;
     padding: 30px 40px;
     background: white;
 }
@@ -83,21 +83,23 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-    #layout-menu {
-        width: 180px; 
-        display: block; 
-        flex-shrink: 0;
-        border-right: 1px solid #dddddd;
-        border-bottom: none;
+    #tlayout {
+        flex-direction: column; 
     }
 
-    #tlayout {
-        flex-direction: row; 
+    #layout-menu {
+        width: 100%; 
+        border-right: none;
+        border-bottom: 1px solid #dddddd;
+        padding: 15px 20px;
+        box-sizing: border-box;
     }
 
     #layout-content {
+        max-width: 100%;
+        width: 100%;
         padding: 20px;
-        max-width: calc(100% - 180px);
+        box-sizing: border-box;
     }
 
     .profile-container {
