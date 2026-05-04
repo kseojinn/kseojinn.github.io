@@ -14,7 +14,7 @@ body {
 }
 
 #layout-menu {
-    width: 180px;
+    width: 130px;
     background: #f6f6f6;
     border-right: 1px solid #dddddd;
     padding: 20px;
@@ -23,7 +23,7 @@ body {
 
 #layout-content {
     flex-grow: 1;
-    max-width: 850px;
+    max-width: 860px;
     width: 100%;
     min-width: auto;
     padding: 30px 40px;
