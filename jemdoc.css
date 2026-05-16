@@ -14,7 +14,7 @@ body {
 }
 
 #layout-menu {
-    width: 130px;
+    width: 100px;
     background: #f6f6f6;
     border-right: 1px solid #dddddd;
     padding: 20px;
@@ -26,7 +26,7 @@ body {
     max-width: 860px;
     width: 100%;
     min-width: auto;
-    padding: 30px 40px;
+    padding: 10px 30px;
     background: white;
 }
 
@@ -60,13 +60,13 @@ div#toptitle {
 }
 
 h1 { color: #527bbd; font-size: 165%; margin: 0.5em 0; }
-h2 { color: #527bbd; font-size: 125%; border-bottom: 1px solid #aaaaaa; padding-top: 0.8em; margin-bottom: 0.3em; }
+h2 { color: #527bbd; font-size: 125%; border-bottom: 1px solid #aaaaaa; padding-top: 0.8em; margin-top: 0px; margin-bottom: 0.3em; }
 
 .profile-container {
     display: flex;
     align-items: flex-start;
     gap: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 }
 
 div#footer {
@@ -79,7 +79,7 @@ div#footer {
 
 ul {
     list-style-type: square;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -105,10 +105,28 @@ ul {
     .profile-container {
         flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
+        gap: 10px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        margin-bottom: 20px;
     }
 
     .profile-img img {
         width: 100px;
+        max-width: 100%;
+        height: auto;
     }
 }
+
+    .research-title {
+        color: #527bbd;
+        font-weight: bold;
+    }
+
+    .profile-img {
+        margin-right: 45px;
+    }
