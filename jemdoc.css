@@ -23,7 +23,7 @@ body {
 
 #layout-content {
     flex-grow: 1;
-    max-width: 860px;
+    max-width: 870px;
     width: 100%;
     min-width: auto;
     padding: 10px 30px;
